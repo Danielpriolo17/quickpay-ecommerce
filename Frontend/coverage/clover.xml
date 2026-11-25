@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1795638532781" clover="3.2.0">
+  <project timestamp="1795638532781" name="All files">
+    <metrics statements="269" coveredstatements="254" conditionals="171" coveredconditionals="147" methods="70" coveredmethods="64" elements="510" coveredelements="465" complexity="0" loc="269" ncloc="269" packages="7" files="12" classes="12"/>
+    <package name="src">
+      <metrics statements="40" coveredstatements="38" conditionals="17" coveredconditionals="15" methods="11" coveredmethods="9"/>
+      <file name="App.tsx" path="C:\Repositorios\quickpay-ecommerce\Frontend\src\App.tsx">
+        <metrics statements="40" coveredstatements="38" conditionals="17" coveredconditionals="15" methods="11" coveredmethods="9"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
+        <line num="35" count="13" type="stmt"/>
+        <line num="40" count="27" type="stmt"/>
+        <line num="42" count="27" type="stmt"/>
+        <line num="45" count="13" type="stmt"/>
+        <line num="47" count="13" type="stmt"/>
+        <line num="48" count="1" type="stmt"/>
+        <line num="51" count="13" type="stmt"/>
+        <line num="52" count="1" type="stmt"/>
+        <line num="55" count="13" type="stmt"/>
+        <line num="62" count="2" type="stmt"/>
+        <line num="63" count="2" type="stmt"/>
+        <line num="77" count="13" type="stmt"/>
+        <line num="78" count="1" type="cond" truecount="3" falsecount="1"/>
+        <line num="80" count="1" type="stmt"/>
+        <line num="90" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="91" count="1" type="stmt"/>
+        <line num="95" count="13" type="stmt"/>
+        <line num="96" count="1" type="stmt"/>
+        <line num="97" count="1" type="stmt"/>
+        <line num="98" count="1" type="stmt"/>
+        <line num="101" count="13" type="stmt"/>
+        <line num="146" count="1" type="stmt"/>
+        <line num="147" count="1" type="stmt"/>
+        <line num="163" count="0" type="stmt"/>
+        <line num="175" count="0" type="stmt"/>
+        <line num="188" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.app">
+      <metrics statements="16" coveredstatements="13" conditionals="2" coveredconditionals="1" methods="2" coveredmethods="2"/>
+      <file name="store.ts" path="C:\Repositorios\quickpay-ecommerce\Frontend\src\app\store.ts">
+        <metrics statements="16" coveredstatements="13" conditionals="2" coveredconditionals="1" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="37" count="14" type="stmt"/>
+        <line num="38" count="14" type="stmt"/>
+        <line num="39" count="14" type="stmt"/>
+        <line num="49" count="14" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components">
+      <metrics statements="7" coveredstatements="7" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+      <file name="CardBrandBadge.tsx" path="C:\Repositorios\quickpay-ecommerce\Frontend\src\components\CardBrandBadge.tsx">
+        <metrics statements="7" coveredstatements="7" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="9" count="30" type="cond" truecount="2" falsecount="0"/>
+        <line num="10" count="25" type="stmt"/>
+        <line num="20" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="35" count="4" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.feat.checkout">
+      <metrics statements="109" coveredstatements="101" conditionals="98" coveredconditionals="82" methods="29" coveredmethods="26"/>
+      <file name="PaymentModal.tsx" path="C:\Repositorios\quickpay-ecommerce\Frontend\src\feat\checkout\PaymentModal.tsx">
+        <metrics statements="56" coveredstatements="54" conditionals="49" coveredconditionals="47" methods="17" coveredmethods="15"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="18" count="2" type="stmt"/>
+        <line num="36" count="2" type="stmt"/>
+        <line num="45" count="27" type="stmt"/>
+        <line num="46" count="27" type="stmt"/>
+        <line num="47" count="27" type="stmt"/>
+        <line num="48" count="27" type="stmt"/>
+        <line num="50" count="27" type="stmt"/>
+        <line num="52" count="27" type="stmt"/>
+        <line num="53" count="4" type="stmt"/>
+        <line num="54" count="4" type="stmt"/>
+        <line num="56" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="57" count="1" type="stmt"/>
+        <line num="59" count="4" type="cond" truecount="4" falsecount="0"/>
+        <line num="60" count="1" type="stmt"/>
+        <line num="62" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="63" count="1" type="stmt"/>
+        <line num="65" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="66" count="1" type="stmt"/>
+        <line num="68" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="69" count="1" type="stmt"/>
+        <line num="71" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="72" count="1" type="stmt"/>
+        <line num="74" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="75" count="1" type="stmt"/>
+        <line num="77" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="78" count="1" type="stmt"/>
+        <line num="80" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="81" count="1" type="stmt"/>
+        <line num="83" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="84" count="1" type="stmt"/>
+        <line num="87" count="4" type="stmt"/>
+        <line num="88" count="4" type="stmt"/>
+        <line num="91" count="27" type="stmt"/>
+        <line num="92" count="4" type="stmt"/>
+        <line num="93" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="95" count="3" type="stmt"/>
+        <line num="96" count="3" type="stmt"/>
+        <line num="110" count="27" type="stmt"/>
+        <line num="171" count="2" type="stmt"/>
+        <line num="198" count="2" type="stmt"/>
+        <line num="223" count="2" type="stmt"/>
+        <line num="247" count="2" type="stmt"/>
+        <line num="271" count="2" type="stmt"/>
+        <line num="297" count="0" type="stmt"/>
+        <line num="302" count="189" type="stmt"/>
+        <line num="330" count="2" type="stmt"/>
+        <line num="353" count="2" type="stmt"/>
+        <line num="375" count="2" type="stmt"/>
+        <line num="406" count="2" type="stmt"/>
+        <line num="429" count="2" type="stmt"/>
+        <line num="451" count="2" type="stmt"/>
+        <line num="476" count="0" type="stmt"/>
+      </file>
+      <file name="PaymentResultPage.tsx" path="C:\Repositorios\quickpay-ecommerce\Frontend\src\feat\checkout\PaymentResultPage.tsx">
+        <metrics statements="6" coveredstatements="6" conditionals="27" coveredconditionals="23" methods="1" coveredmethods="1"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="22" count="2" type="stmt"/>
+        <line num="28" count="4" type="stmt"/>
+        <line num="29" count="4" type="stmt"/>
+        <line num="31" count="4" type="stmt"/>
+      </file>
+      <file name="SummaryBackdrop.tsx" path="C:\Repositorios\quickpay-ecommerce\Frontend\src\feat\checkout\SummaryBackdrop.tsx">
+        <metrics statements="6" coveredstatements="6" conditionals="14" coveredconditionals="12" methods="1" coveredmethods="1"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="36" count="2" type="stmt"/>
+        <line num="50" count="6" type="stmt"/>
+        <line num="51" count="6" type="stmt"/>
+        <line num="53" count="6" type="stmt"/>
+      </file>
+      <file name="checkoutSlice.ts" path="C:\Repositorios\quickpay-ecommerce\Frontend\src\feat\checkout\checkoutSlice.ts">
+        <metrics statements="41" coveredstatements="35" conditionals="8" coveredconditionals="0" methods="10" coveredmethods="9"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="17" count="2" type="stmt"/>
+        <line num="37" count="2" type="stmt"/>
+        <line num="59" count="2" type="stmt"/>
+        <line num="71" count="2" type="stmt"/>
+        <line num="73" count="2" type="stmt"/>
+        <line num="81" count="2" type="stmt"/>
+        <line num="87" count="2" type="stmt"/>
+        <line num="89" count="2" type="stmt"/>
+        <line num="91" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="93" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="95" count="0" type="stmt"/>
+        <line num="99" count="0" type="stmt"/>
+        <line num="104" count="2" type="stmt"/>
+        <line num="112" count="2" type="stmt"/>
+        <line num="113" count="2" type="stmt"/>
+        <line num="114" count="2" type="stmt"/>
+        <line num="115" count="2" type="stmt"/>
+        <line num="118" count="2" type="stmt"/>
+        <line num="119" count="2" type="stmt"/>
+        <line num="134" count="3" type="stmt"/>
+        <line num="135" count="3" type="stmt"/>
+        <line num="136" count="3" type="stmt"/>
+        <line num="137" count="3" type="stmt"/>
+        <line num="138" count="3" type="stmt"/>
+        <line num="141" count="2" type="stmt"/>
+        <line num="144" count="3" type="stmt"/>
+        <line num="148" count="2" type="stmt"/>
+        <line num="150" count="2" type="stmt"/>
+        <line num="151" count="2" type="stmt"/>
+        <line num="154" count="2" type="stmt"/>
+        <line num="155" count="2" type="stmt"/>
+        <line num="156" count="2" type="stmt"/>
+        <line num="157" count="2" type="stmt"/>
+        <line num="158" count="2" type="stmt"/>
+        <line num="161" count="0" type="stmt"/>
+        <line num="162" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="167" count="2" type="stmt"/>
+        <line num="175" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.feat.products">
+      <metrics statements="41" coveredstatements="40" conditionals="22" coveredconditionals="21" methods="16" coveredmethods="15"/>
+      <file name="ProductListPage.tsx" path="C:\Repositorios\quickpay-ecommerce\Frontend\src\feat\products\ProductListPage.tsx">
+        <metrics statements="21" coveredstatements="20" conditionals="18" coveredconditionals="18" methods="9" coveredmethods="8"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="20" count="10" type="stmt"/>
+        <line num="22" count="10" type="cond" truecount="2" falsecount="0"/>
+        <line num="24" count="10" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="29" count="10" type="cond" truecount="4" falsecount="0"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="33" count="3" type="stmt"/>
+        <line num="47" count="9" type="cond" truecount="2" falsecount="0"/>
+        <line num="48" count="1" type="stmt"/>
+        <line num="63" count="8" type="stmt"/>
+        <line num="76" count="9" type="stmt"/>
+        <line num="77" count="9" type="stmt"/>
+        <line num="79" count="9" type="stmt"/>
+        <line num="130" count="0" type="stmt"/>
+        <line num="144" count="1" type="stmt"/>
+        <line num="159" count="2" type="stmt"/>
+      </file>
+      <file name="productsSlice.ts" path="C:\Repositorios\quickpay-ecommerce\Frontend\src\feat\products\productsSlice.ts">
+        <metrics statements="20" coveredstatements="20" conditionals="4" coveredconditionals="3" methods="7" coveredmethods="7"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="20" count="2" type="stmt"/>
+        <line num="23" count="4" type="stmt"/>
+        <line num="24" count="4" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="31" count="2" type="stmt"/>
+        <line num="36" count="3" type="stmt"/>
+        <line num="37" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="38" count="2" type="stmt"/>
+        <line num="43" count="2" type="stmt"/>
+        <line num="45" count="4" type="stmt"/>
+        <line num="46" count="4" type="stmt"/>
+        <line num="49" count="3" type="stmt"/>
+        <line num="50" count="3" type="stmt"/>
+        <line num="53" count="1" type="stmt"/>
+        <line num="54" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="59" count="2" type="stmt"/>
+        <line num="60" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.services">
+      <metrics statements="12" coveredstatements="12" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4"/>
+      <file name="api.service.ts" path="C:\Repositorios\quickpay-ecommerce\Frontend\src\services\api.service.ts">
+        <metrics statements="12" coveredstatements="12" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="45" count="1" type="stmt"/>
+        <line num="57" count="1" type="stmt"/>
+        <line num="64" count="1" type="stmt"/>
+        <line num="77" count="1" type="stmt"/>
+        <line num="84" count="1" type="stmt"/>
+        <line num="90" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.utils">
+      <metrics statements="44" coveredstatements="43" conditionals="26" coveredconditionals="22" methods="7" coveredmethods="7"/>
+      <file name="card-validation.ts" path="C:\Repositorios\quickpay-ecommerce\Frontend\src\utils\card-validation.ts">
+        <metrics statements="41" coveredstatements="40" conditionals="26" coveredconditionals="22" methods="6" coveredmethods="6"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="4" count="82" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="8" count="31" type="stmt"/>
+        <line num="9" count="31" type="cond" truecount="2" falsecount="0"/>
+        <line num="10" count="25" type="stmt"/>
+        <line num="12" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="15" count="4" type="stmt"/>
+        <line num="18" count="3" type="stmt"/>
+        <line num="19" count="28" type="stmt"/>
+        <line num="20" count="28" type="stmt"/>
+        <line num="23" count="3" type="stmt"/>
+        <line num="24" count="7" type="stmt"/>
+        <line num="25" count="7" type="cond" truecount="4" falsecount="0"/>
+        <line num="26" count="2" type="stmt"/>
+        <line num="29" count="5" type="stmt"/>
+        <line num="30" count="5" type="stmt"/>
+        <line num="32" count="5" type="stmt"/>
+        <line num="33" count="80" type="stmt"/>
+        <line num="34" count="80" type="cond" truecount="2" falsecount="0"/>
+        <line num="35" count="40" type="stmt"/>
+        <line num="36" count="40" type="cond" truecount="1" falsecount="1"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="40" count="80" type="stmt"/>
+        <line num="41" count="80" type="stmt"/>
+        <line num="44" count="5" type="stmt"/>
+        <line num="47" count="3" type="stmt"/>
+        <line num="48" count="8" type="stmt"/>
+        <line num="49" count="8" type="stmt"/>
+        <line num="51" count="8" type="cond" truecount="6" falsecount="0"/>
+        <line num="52" count="3" type="stmt"/>
+        <line num="55" count="5" type="cond" truecount="1" falsecount="1"/>
+        <line num="56" count="5" type="stmt"/>
+        <line num="57" count="5" type="stmt"/>
+        <line num="58" count="5" type="stmt"/>
+        <line num="60" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="61" count="4" type="cond" truecount="2" falsecount="2"/>
+        <line num="62" count="4" type="stmt"/>
+        <line num="65" count="3" type="stmt"/>
+        <line num="66" count="7" type="stmt"/>
+      </file>
+      <file name="currency.ts" path="C:\Repositorios\quickpay-ecommerce\Frontend\src\utils\currency.ts">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="3" type="stmt"/>
+        <line num="2" count="74" type="stmt"/>
+        <line num="3" count="74" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
