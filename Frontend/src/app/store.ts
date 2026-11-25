@@ -1,6 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit';
-import checkoutReducer, { INITIAL_CHECKOUT_STATE } from '../feat/checkout/CheckoutSlice';
-import type { CheckoutState } from '../feat/checkout/CheckoutSlice';
+import checkoutReducer, {
+  type CheckoutState,
+  INITIAL_CHECKOUT_STATE,
+} from '../feat/checkout/checkoutSlice';
 import productsReducer from '../feat/products/productsSlice';
 
 const STORAGE_KEY = 'quickpay_checkout_state_v1';
