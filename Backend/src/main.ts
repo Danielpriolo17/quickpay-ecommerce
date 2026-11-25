@@ -2,6 +2,7 @@ import { ValidationPipe } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { NestFactory } from '@nestjs/core';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
+import { json, urlencoded } from 'express';
 import helmet from 'helmet';
 import { AppModule } from './app.module';
 
@@ -9,10 +10,23 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   const configService = app.get(ConfigService);
 
+  // Límites de payload (protección OWASP contra payloads excesivos)
+  app.use(json({ limit: '50kb' }));
+  app.use(urlencoded({ extended: true, limit: '50kb' }));
+
+  // Cabeceras de seguridad HTTP (OWASP / Mozilla Observatory)
   app.use(
     helmet({
-      contentSecurityPolicy: false, // Permite cargar Swagger UI sin bloqueo en dev/demo
+      contentSecurityPolicy: false,
       crossOriginResourcePolicy: { policy: 'cross-origin' },
+      frameguard: { action: 'deny' },
+      hsts: {
+        maxAge: 31536000,
+        includeSubDomains: true,
+        preload: true,
+      },
+      referrerPolicy: { policy: 'strict-origin-when-cross-origin' },
+      noSniff: true,
     }),
   );
 
@@ -40,7 +54,7 @@ async function bootstrap() {
   );
 
   const swaggerConfig = new DocumentBuilder()
-    .setTitle('Checkout Store API')
+    .setTitle('QuickPay Checkout Store API')
     .setDescription(
       'REST API built with Hexagonal Architecture and Railway Oriented Programming',
     )
@@ -51,9 +65,9 @@ async function bootstrap() {
   SwaggerModule.setup('api/docs', app, document);
 
   const port = Number(configService.get('PORT', 3000));
-  await app.listen(port);
-  console.log(`API running on http://localhost:${port}/api`);
-  console.log(`Swagger docs available at http://localhost:${port}/api/docs`);
+  await app.listen(port, '0.0.0.0');
+  console.log(`API running on http://0.0.0.0:${port}/api`);
+  console.log(`Swagger docs available at http://0.0.0.0:${port}/api/docs`);
 }
 
 bootstrap();
