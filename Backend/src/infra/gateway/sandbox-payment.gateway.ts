@@ -205,11 +205,28 @@ export class SandboxPaymentGateway implements PaymentGatewayPort {
 
     for (let attempt = 0; attempt < maxAttempts; attempt++) {
       await new Promise((resolve) => setTimeout(resolve, delayMs));
-      const response = await this.httpClient.get(`/transactions/${externalId}`);
-      latest = response.data?.data as GatewayTransactionData;
+      try {
+        const response = await this.httpClient.get(
+          `/transactions/${externalId}`,
+          {
+            headers: {
+              Authorization: `Bearer ${this.publicKey}`,
+            },
+          },
+        );
+        latest = response.data?.data as GatewayTransactionData;
 
-      if (latest.status !== 'PENDING') {
-        return latest;
+        if (latest.status !== 'PENDING') {
+          return latest;
+        }
+      } catch (error) {
+        if (axios.isAxiosError(error) && error.response?.status === 404) {
+          this.logger.warn(
+            `Transaction ${externalId} not indexed yet (attempt ${attempt + 1}/${maxAttempts})`,
+          );
+          continue;
+        }
+        throw error;
       }
     }
 
@@ -240,14 +257,14 @@ export class SandboxPaymentGateway implements PaymentGatewayPort {
 
   private extractAxiosErrorMessage(error: unknown): string {
     if (axios.isAxiosError(error)) {
+      const endpoint = `${error.config?.method?.toUpperCase() ?? 'REQ'} ${error.config?.url ?? ''}`;
       const apiError = error.response?.data?.error;
-      if (apiError?.messages) {
-        return JSON.stringify(apiError.messages);
-      }
-      if (apiError?.reason) {
-        return String(apiError.reason);
-      }
-      return error.message;
+      const detail = apiError?.messages
+        ? JSON.stringify(apiError.messages)
+        : apiError?.reason
+          ? String(apiError.reason)
+          : error.message;
+      return `[${endpoint}] ${detail}`;
     }
     return error instanceof Error ? error.message : 'Unknown gateway error';
   }
