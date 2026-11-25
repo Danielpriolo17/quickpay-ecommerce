@@ -8,8 +8,10 @@ import type {
   TransactionRecord,
 } from '../types/store.types';
 
+import { env } from '../config/env';
+
 const apiClient = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || 'http://localhost:3000/api',
+  baseURL: env.API_URL,
   timeout: 20000,
   headers: {
     'Content-Type': 'application/json',

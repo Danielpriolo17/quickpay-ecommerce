@@ -26,12 +26,10 @@ const EMPTY_CARD: CardFormData = {
   installments: 1,
 };
 
-const BASE_FEE_IN_CENTS = Number(
-  import.meta.env.VITE_BASE_FEE_IN_CENTS || 300000,
-);
-const DELIVERY_FEE_IN_CENTS = Number(
-  import.meta.env.VITE_DELIVERY_FEE_IN_CENTS || 1000000,
-);
+import { env } from './config/env';
+
+const BASE_FEE_IN_CENTS = env.BASE_FEE_IN_CENTS;
+const DELIVERY_FEE_IN_CENTS = env.DELIVERY_FEE_IN_CENTS;
 
 export function App() {
   const dispatch = useDispatch<AppDispatch>();
